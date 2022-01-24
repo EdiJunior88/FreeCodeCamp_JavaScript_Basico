@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Diferenciar entre as palavras-chave var e let</title>
+</head>
+<body>
+  <h1>Diferenciar entre as palavras-chave var e let</h1>
+
+  <p>Um dos maiores problemas ao declarar variáveis com a palavra-chave <code>var</code> é que você pode sobrescrever facilmente declarações de variável:</p>
+
+  <pre>
+    var camper = "James";
+    var camper = "David";
+    console.log(camper);
+  </pre>
+
+  <p>No código acima, a variável <code>camper</code> é originalmente declarada com o valor <code>James</code> e então substituída pelo valor <code>David</code>. O console, então, vai exibir a string <code>David</code>.</p>
+
+  <p>Em uma aplicação pequena, você pode não encontrar esse tipo de problema. Mas à medida que sua base de código se tornar maior, você pode sobrescrever acidentalmente uma variável que você não pretendia. Como esse comportamento não lança um erro, a busca e correção de bugs tornam-se mais difíceis.</p>
+
+  <p>Uma palavra-chave chamada <code>let</code> foi introduzida na ES6, uma grande atualização para o JavaScript, para resolver este possível problema com a palavra-chave <code>var</code>. Você vai aprender sobre outros recursos da ES6 em desafios posteriores.</p>
+
+  <p>Se você substituir <code>var</code> por <code>let</code> no código acima, ele resultará em um erro:</p>
+
+  <pre>
+    let camper = "James";
+    let camper = "David";
+  </pre>
+
+  <p>O erro pode ser visto no console do seu navegador.</p>
+
+  <p>Então, diferente de <code>var</code>, ao usar <code>let</code>, uma variável com o mesmo nome só pode ser declarada uma única vez.</p>
+
+  <p>Atualize o código para que apenas a palavra-chave <code>let</code> seja usada.</p>
+</body>
+</html>
