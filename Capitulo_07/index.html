@@ -6,25 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <script src="index.js"></script>
-  <title>Declarar variáveis de string</title>
+  <title>Entender variáveis não inicializadas</title>
 </head>
 <body>
-  <h1>Declarar variáveis de string</h1>
+  <h1>Entender variáveis não inicializadas</h1>
 
-  Anteriormente, você usou o seguinte código para declarar uma variável:
+  <p>Quando as variáveis de JavaScript são declaradas, elas têm um valor inicial de <code>undefined</code>. Se você fizer uma operação matemática em uma variável <code>undefined</code>, seu resultado será <code>NaN</code>, o que significa que <i>"Não é um número"</i>. Se você concatenar uma string com uma variável <code>undefined</code>, você receberá uma string literal de <code>undefined</code>.</p>
 
-  <pre>
-    var myName;
-  </pre>
-
-  Mas você também pode declarar uma variável string assim:
-
-  <pre>
-    ar myName = "your name";
-  </pre>
-
-  <code>"your name"</code> é chamado de string literal. Uma string literal, ou string, é uma série de 0 ou mais caracteres entre aspas simples ou duplas.
-
-  Crie duas novas variáveis de string: <code>myFirstName</code> e <code>myLastName</code> e atribua a elas os valores do seu primeiro e último nome, respectivamente.
+  <p>Inicialize as três variáveis <code>a</code>, <code>b</code> e <code>c</code> com <code>5</code>, <code>10</code>, e <code>"I am a"</code> respectivamente para que eles não sejam <code>undefined</code>.  </p>
 </body>
 </html>
