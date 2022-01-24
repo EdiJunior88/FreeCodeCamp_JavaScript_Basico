@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Declarar variáveis somente de leitura com a palavra-chave const</title>
+</head>
+<body>
+  <h1>Declarar variáveis somente de leitura com a palavra-chave const</h1>
+
+  <p>A palavra-chave <code>let</code> não é a única nova forma de declarar variáveis. Na versão ES6, você também pode declarar variáveis usando a palavra-chave <code>const</code>.</p>
+
+  <p><code>const</code> possui todos os recursos maravilhosos que <code>let</code> tem, com o bônus adicional que variáveis declaradas usando <code>const</code> são somente de leitura. Elas têm um valor constante, o que significa que a variável atribuída com <code>const</code> não pode ser atribuída novamente:</p>
+
+  <pre>
+    const FAV_PET = "Cats";
+    FAV_PET = "Dogs";
+  </pre>
+
+  <p>O console vai exibir um erro devido à reatribuição do valor de <code>FAV_PET</code>.</p>
+
+  <p>Você sempre deve nomear variáveis que você não quer reatribuir, usando a palavra-chave const. Isso ajuda quando você acidentalmente tenta reatribuir uma variável que deveria ser constante.</p>
+
+  <p>Uma prática comum ao nomear constantes é colocar todas as letras em maiúsculas, com palavras separadas por sublinhado (underscore).</p>
+
+  <p><strong>Observação</strong>: é comum que os desenvolvedores usem nomes de variáveis maiúsculas para valores imutáveis e minúsculas ou camelCase para valores mutáveis (objetos e arrays). Você aprenderá mais sobre objetos, arrays e valores imutáveis e mutáveis em desafios futuros. Em desafios posteriores, você também verá exemplos de identificadores de variáveis maiúsculas, minúsculas ou em camelCase.</p>
+
+  <p>Altere o código para que todas as variáveis sejam declaradas usando <code>let</code> ou <code>const</code>. Use <code>let</code> quando você quiser que a variável mude e <code>const</code> quando você quiser que a variável permaneça constante. Além disso, renomeie as variáveis declaradas com <code>const</code> para estar em conformidade com as práticas comuns, o que significa que constantes devem ter todas as letras em maiúsculo.</p>
+</body>
+</html>
