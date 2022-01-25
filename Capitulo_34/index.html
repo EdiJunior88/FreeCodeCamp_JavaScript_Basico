@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Entender a imutabilidade das strings</title>
+</head>
+<body>
+  <h1>Entender a imutabilidade das strings</h1>
+
+  <p>Em JavaScript, valores <code>String</code> são <i>imutáveis</i>, o que significa que elas não podem ser alteradas após serem criadas.</p>
+
+  <p>Por exemplo, o código a seguir:</p>
+
+  <pre>
+    let myStr = "Bob";
+    myStr[0] = "J";
+  </pre>
+
+  <p>não permite alterar o valor de <code>myStr</code> para <code>Job</code>, porque o conteúdo de <code>myStr</code> não pode ser alterado. Note que isso não significa que <code>myStr</code> não pode ser alterado, apenas que os caracteres individuais de uma string literal não podem ser alterados. A única forma de alterar <code>myStr</code> seria atribuindo a ela uma nova string, dessa forma:</p>
+
+  <pre>
+    let myStr = "Bob";
+    myStr = "Job";
+  </pre>
+
+  <p>Corrija a atribuição para myStr para que contenha o valor <code>Hello World</code> (string) usando a abordagem mostrada no exemplo acima.</p>
+</body>
+</html>
