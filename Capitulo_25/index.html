@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Escapar aspas literais em strings</title>
+</head>
+<body>
+  <h1>Escapar aspas literais em strings</h1>
+
+  <p>Quando você estiver definindo uma sequência de caracteres você deve iniciar e terminar com uma aspa simples ou dupla. O que acontece quando você precisa de uma aspa literal: <code>"</code> ou <code>'</code> dentro de sua string?</p>
+
+  <p>Em JavaScript, você pode escapar uma aspa para que não seja considerada como o fim de uma string ao colocar a barra invertida (<code>\</code>) na frente da aspa.</p>
+
+  <pre>
+    const sampleStr = "Alan said, \"Peter is learning JavaScript\".";
+  </pre>
+
+  <p>Isso sinaliza ao JavaScript que a aspa seguinte não é o fim de uma string, mas que deve aparecer dentro da string. Então, se você fosse imprimir isso no console, você obteria:</p>
+
+  <pre>
+    Alan said, "Peter is learning JavaScript".
+  </pre>
+
+  <p>Use barras invertidas para atribuir a string à variável <code>myStr</code> para que, se você fosse imprimi-la no console, veria:</p>
+
+  <pre>
+    I am a "double quoted" string inside "double quotes".
+  </pre>
+</body>
+</html>
