@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Cercar uma string com aspas simples</title>
+</head>
+<body>
+  <h1>Cercar uma string com aspas simples</h1>
+
+  <p>Valores de <i>string</i> em JavaScript podem ser escritas com aspas simples ou duplas, desde que você comece e termine com o mesmo tipo de aspas. Diferente de outras linguagens de programação, aspas simples e duplas funcionam da mesma forma em JavaScript.</p>
+
+  <pre>
+    const doubleQuoteStr = "This is a string";
+    const singleQuoteStr = 'This is also a string';
+  </pre>
+
+  <p>O motivo pelo qual você pode querer usar um tipo de aspas no lugar da outra é se você vir a querer usar ambas em uma string. Isso pode acontecer se você quiser salvar uma conversa em uma string e ter a conversa entre aspas. Outro uso para isso seria salvar uma tag <code>&lta&gt</code> com vários atributos em aspas, tudo dentro de uma string.</p>
+  
+  <pre>
+    const conversation = 'Finn exclaims to Jake, "Algebraic!"';
+  </pre>
+
+  <p>Porém, isso se torna um problema se você precisar usar as aspas mais extremas dentro dela. Lembre-se, uma string tem o mesmo tipo de aspas no início e no final. Mas se você tem aquela mesma aspa em algum lugar no meio, a string vai terminar mais cedo e lançará um erro.</p>
+  
+  <pre>
+    const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"';
+    const badStr = 'Finn responds, "Let's go!"';
+  </pre>
+
+  <p>Aqui <code>badStr</code> lançará um erro.</p>
+  
+  <p>Na string goodStr acima, você pode usar ambas as aspas com segurança ao usar a barra invertida <code>\</code> como um caractere de escapamento.</p>
+  
+  <p><strong>Observação</strong>: a barra invertida <code>\</code> não deve ser confundida com a barra comum <code>/</code>. Elas não fazem a mesma coisa.</p>
+  
+  <p>Altere a string fornecida para uma string com aspas simples no início e no final e sem caracteres de escapamento.</p>
+  
+  <p>Nesse momento, a tag <code>&lta&gt</code> na string usa aspas duplas em todo canto. Você precisará alterar as aspas mais externas para aspas simples, para que você possa remover os caracteres de escapamento.</p>
+</body>
+</html>
