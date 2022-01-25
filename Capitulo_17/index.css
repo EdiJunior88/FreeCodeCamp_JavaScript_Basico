@@ -1,0 +1,13 @@
+pre {
+  width: auto;
+  height: auto;
+  background: rgb(207, 229, 155);
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+code {
+  background: rgba(189, 187, 187, 0.61);
+  font-weight: bold;
+  padding: 1.5px;
+}
