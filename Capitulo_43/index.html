@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Acessar arrays multidimensionais com índices</title>
+</head>
+<body>
+  <h1>Acessar arrays multidimensionais com índices</h1>
+
+  <p>Uma maneira de pensar em um array <i>multidimensional</i> é como um <i>array</i> de arrays. Quando você usa colchetes para acessar seu array, o primeiro conjunto de colchetes se refere às entradas no array mais exterior (o primeiro nível), e cada par adicional de colchetes refere-se ao próximo nível de entradas interno.</p>
+
+  <p><strong>Exemplo</strong></p>
+
+  <pre>
+    const arr = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+      [[10, 11, 12], 13, 14]
+    ];
+
+    arr[3];
+    arr[3][0];
+    arr[3][0][1];
+  </pre>
+
+  <code>
+    <p><code>arr[3]</code> é <code>[[10, 11, 12], 13, 14]</code>, <code>arr[3][0]</code> é <code>[10, 11, 12]</code>, e <code>arr[3][0][1]</code> é <code>11</code>.</p>
+  </code>
+
+  <p><strong>Observação</strong>: não deve haver nenhum espaço entre o nome do array e os colchetes como array [0][0] e até mesmo <code>array [0] [0]</code> não é permitido. Embora JavaScript seja capaz de processar isso corretamente, isso pode confundir outros programadores lendo seu código.</p>
+
+  <p>Utilizando notação de colchetes, selecione um elemento de <code>myArray</code> de forma que <code>myData</code> seja igual a <code>8</code>.</p>
+</body>
+</html>
