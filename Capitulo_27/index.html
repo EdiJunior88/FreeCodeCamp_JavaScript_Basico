@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Escapar sequências em strings</title>
+</head>
+<body>
+  <h1>Escapar sequências em strings</h1>
+
+  <p>Aspas não são os únicos caracteres que podem ser escapados dentro de uma string. Há dois motivos para usar caracteres de escapamento:</p>
+
+  <ol>
+    <li>Para permitir que você use caracteres que você pode não ser capaz de digitar do contrário, como o caractere de retorno de carro.</li>
+    <li>Para permitir que você represente várias aspas em uma string sem o JavaScript entender erroneamente o que você quis dizer.</li>
+  </ol>
+
+  <p>Aprendemos isso no desafio anterior.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Saída</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>\'</td>
+        <td>aspas simples</td>
+      </tr>
+      <tr>
+        <td>\"</td>
+        <td>aspas duplas</td>
+      </tr>
+      <tr>
+        <td>\\</td>
+        <td>barra invertida</td>
+      </tr>
+      <tr>
+        <td>\n</td>
+        <td>nova linha</td>
+      </tr>
+      <tr>
+        <td>\r</td>
+        <td>retorno do carro</td>
+      </tr>
+      <tr>
+        <td>\t</td>
+        <td>tab</td>
+      </tr>
+      <tr>
+        <td>\b</td>
+        <td>limite de palavra</td>
+      </tr>
+      <tr>
+        <td>\f</td>
+        <td>quebra de página</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><i>Note que a própria barra invertida deve ser escapada para ser exibida como uma barra invertida.</i></p>
+
+  <p>Atribua as três linhas de texto a seguir em uma única variável <code>myStr</code> usando sequências de escapamento.</p>
+
+  <pre>
+    FirstLine
+        \SecondLine
+    ThirdLine
+  </pre>
+
+  <p>Você precisará usar sequências de escapamento para inserir corretamente os caracteres especiais. Você também precisará seguir os espaçamentos assim como acima, sem espaços entre sequências de escapamento ou palavras.</p>
+
+  <p>Observação: a identação para <code>SecondLine</code> é alcançada com o caractere de espaçamento tab, e não com espaços.</p>
+</body>
+</html>
