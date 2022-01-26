@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Diferenciar escopo global e local em funções</title>
+</head>
+<body>
+  <h1>Diferenciar escopo global e local em funções</h1>
+
+  <p>É possível ter as variáveis <i>local</i> e <i>global</i> com o mesmo nome. Quando você faz isso, a variável local tem precedência sobre a variável global.</p>
+
+  <p>Neste exemplo:</p>
+
+  <pre>
+    const someVar = "Hat";
+    function myFun() {
+      const someVar = "Head";
+      return someVar;
+    }
+  </pre>
+
+  <p>A função <code>myFun</code> retornará a string <code>Head</code> porque a versão local da variável está presente.</p>
+
+  <p>Adicione uma variável local para a função <code>myOutfit</code> para sobrescrever o valor de <code>outerWear</code> com a string <code>sweater</code>.</p>
+</body>
+</html>
