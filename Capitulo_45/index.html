@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Manipular arrays com pop()</title>
+</head>
+<body>
+  <h1>Manipular arrays com pop()</h1>
+
+  <p>Outra forma de alterar os dados em um array é com a função <code>.pop()</code>.</p>
+
+  <p><code>.pop()</code> é usado para remover um valor do final do array. Nós podemos armazenar esse valor removido atribuindo-o a uma variável. Em outras palavras, <code>.pop()</code> remove o último elemento de um array e retorna aquele elemento.</p>
+
+  <p>Qualquer tipo de entrada pode ser removida de um array - numbers, strings e até mesmo arrays aninhados.</p>
+
+  <pre>
+    const threeArr = [1, 4, 6];
+    const oneDown = threeArr.pop();
+    console.log(oneDown);
+    console.log(threeArr);
+  </pre>
+
+  <p>O primeiro <code>console.log</code> exibirá o valor <code>6</code> e o segundo exibirá o valor <code>[1, 4]</code>.</p>
+
+  <p>Use a função <code>.pop()</code> para remover o último item de <code>myArray</code> e atribuir o valor removido para uma nova variável, <code>removedFromMyArray</code>.</p>
+</body>
+</html>
