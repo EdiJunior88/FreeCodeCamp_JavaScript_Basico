@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Conhecer o escopo global e funções</title>
+</head>
+<body>
+  <h1>Conhecer o escopo global e funções</h1>
+
+  <p>Em JavaScript, <i>escopo</i> refere-se à visibilidade de variáveis. Variáveis que são definidas fora de um bloco de função tem o escopo <i>Global</i>. Isso significa que elas podem ser vistas em qualquer lugar no seu código JavaScript.</p>
+
+  <p>Variáveis que são declaradas sem a palavra-chave <code>var</code> são automaticamente criadas no escopo <code>global</code>. Isso pode criar consequências indesejadas em outro lugar no seu código ou quando executar uma função novamente. Você sempre deve declarar suas variáveis com <code>var</code>.</p>
+
+  <p>Usando <code>let</code> ou <code>const</code>, declare uma variável global chamada <code>myGlobal</code> fora de qualquer função. Inicialize-a com o valor de <code>10</code>.</p>
+
+  <p>Dentro da função <code>fun1</code>, atribua <code>5</code> para <code>oopsGlobal</code> <strong><i>sem</i></strong> usar as palavras-chave <code>let</code> ou <code>const</code>.</p>
+</body>
+</html>
