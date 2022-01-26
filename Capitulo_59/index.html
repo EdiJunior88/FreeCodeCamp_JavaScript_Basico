@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Usar lógica condicional com instruções if</title>
+</head>
+<body>
+  <h1>Usar lógica condicional com instruções if</h1>
+
+  <p>instruções <code>if</code> são usadas para tomar decisões no código. A palavra-chave <code>if</code> diz ao JavaScript para executar o código nas chaves sob certas condições, definidas nos parênteses. Essas condições são conhecidas como condições <code>Boolean</code> e elas só podem ser <code>true</code> ou <code>false</code>.</p>
+
+  <p>Quando a condição for <code>true</code>, o programa executará as instruções dentro das chaves. Quando a condição booleana for <code>false</code>, as instruções dentro das chaves não serão executadas.</p>
+
+  <p><strong>Pseudocódigo</strong></p>
+
+  <pre>
+    if (<i>condição é verdadeira</i>) {
+    <i>instrução é executada</i>
+    }
+  </pre>
+
+  <p><strong>Exemplo</strong></p>
+
+  <pre>
+    function test (myCondition) {
+      if (myCondition) {
+        return "It was true";
+      }
+      return "It was false";
+    }
+    test(true);
+    test(false);
+  </pre>
+
+  <p><code>test(true)</code> retorna a string <code>It was true</code> e <code>test(false)</code> retorna a string <code>It was false</code>.</p>
+
+  <p>Quando <code>test</code> é chamado com o valor <code>true</code>, a instrução <code>if</code> avalia <code>myCondition</code> para verificar se é <code>true</code> ou não. Já que é <code>true</code>, a função retorna <code>It was true</code>. Quando chamamos <code>test</code> com um valor de <code>false</code>, <code>myCondition</code> <i>não é</i> <code>true</code>, a instrução nas chaves não é executada e a função retorna <code>It was false</code>.</p>
+
+  <p>Crie uma instrução if dentro da função para retornar <code>Yes, that was true</code> se o parâmetro wasThatTrue for true e retorne <code>No, that was false</code> caso contrário.</p>
+</body>
+</html>
