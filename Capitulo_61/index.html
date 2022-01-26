@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Comparar com o operador de igualdade estrita</title>
+</head>
+<body>
+  <h1>Comparar com o operador de igualdade estrita</h1>
+
+  <p>Igualdade estrita (<code>===</code>) é a contrapartida do operador de igualdade (<code>==</code>). No entanto, ao contrário do operador de igualdade, que tenta converter ambos os valores em comparação a um tipo comum, o operador estrito de igualdade não realiza uma conversão de tipo.</p>
+
+  <p>Se os valores que são comparados tiverem valores diferentes, são considerados desiguais, e o operador de igualdade estrito retornará falso.</p>
+
+  <p><strong>Exemplos</strong></p>
+
+  <pre>
+    3 ===  3
+    3 === '3'
+  </pre>
+  
+  <p>Essas condições retornariam <code>true</code> e <code>false</code>, respectivamente.</p>
+
+  <p>No segundo exemplo, <code>3</code> é um tipo de <code>Number</code> e <code>'3'</code> é um tipo <code>String</code>.</p>
+
+  <p>Use o operador de igualdade estrita na instrução <code>if</code>, para que a função retorne a string <code>Equal</code> quando <code>val</code> for estritamente igual a <code>7</code>.</p>
+</body>
+</html>
