@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Comparar com o operador de igualdade</title>
+</head>
+<body>
+  <h1>Comparar com o operador de igualdade</h1>
+
+  <p>Há muitos <i>operadores de comparação</i> em JavaScript. Todos esses operadores retornam um valor booleano <code>true</code> ou <code>false</code>.</p>
+
+  <p>O operador mais básico é o operador de igualdade <code>==</code>. O operador de igualdade compara dois valores e retorna <code>true</code> se eles são equivalentes ou <code>false</code> se não são. Observe que o operador de igualdade é diferente do operador de atribuição (<code>=</code>), que atribui o valor à direita do operador para uma variável à esquerda.</p>
+  
+  <pre>
+    function equalityTest(myVal) {
+      if (myVal == 10) {
+        return "Equal";
+      }
+      return "Not Equal";
+    }
+  </pre>
+
+  <p>Se <code>myVal</code> é igual a <code>10</code>, o operador de igualdade retorna <code>true</code>, assim o código nas chaves será executado e a função retornará <code>Equal</code>. Caso contrário, a função retornará <code>Not Equal</code>. Para que o JavaScript possa comparar dois <i>tipos de dados</i> diferentes (por exemplo, <code>numbers</code> e <code>strings</code>), deve converter um tipo para outro. Isto é conhecido como coerção de tipo (casting ou type coercion). No entanto, uma vez que a faça, você pode comparar os termos da seguinte forma:</p>
+  
+  <pre>
+    1   ==  1
+    1   ==  2
+    1   == '1'
+    "3" ==  3
+  </pre>
+
+  <p>Em ordem, essas expressões seriam avaliadas como <code>true</code>, <code>false</code>, <code>true</code> e <code>true</code>.</p>
+  
+  <p>Adicione o operador de igualdade à linha indicada para que a função retorne a string <code>Equal</code> quando <code>val</code> for equivalente a <code>12</code>.</p>
+</body>
+</html>
