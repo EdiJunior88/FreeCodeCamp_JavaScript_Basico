@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Manipular arrays com unshift()</title>
+</head>
+<body>
+  <h1>Manipular arrays com unshift()</h1>
+
+  <p>Você pode não apenas usar <code>shift</code> para remover elementos do início de um array, como também pode usar <code>unshift</code> para adicionar elementos ao início de um array, ou seja, adicionar elementos na posição inicial do array.</p>
+
+  <p><code>.unshift()</code> funciona exatamente como <code>.push()</code>, mas, ao invés de adicionar o elemento ao final do array, <code>unshift()</code> adiciona o elemento no início do array.</p>
+
+  <p><strong>Exemplo</strong>:</p>
+
+  <pre>
+    const ourArray = ["Stimpson", "J", "cat"];
+    ourArray.shift();
+    ourArray.unshift("Happy");
+  </pre>
+
+  <p>Após o <code>shift</code>, <code>ourArray</code> teria o valor <code>["J","cat"]</code>. Após o <code>unshift</code>, <code>ourArray</code> teria o valor <code>["Happy","J","cat"]</code>.</p>
+
+  <p>Adicione <code>["Paul", 35]</code> ao início da variável <code>myArray</code> usando <code>unshift()</code>.</p>
+</body>
+</html>
