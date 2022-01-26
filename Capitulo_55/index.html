@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Entender o valor undefined retornado de uma função</title>
+</head>
+<body>
+  <h1>Entender o valor undefined retornado de uma função</h1>
+
+  <p>Uma função pode incluir a instrução <code>return</code> mas ela não precisa fazer isso. No caso de a função não ter uma instrução <code>return</code>, quando você a chamar, a função processa o código interno, mas o valor retornado é <code>undefined</code>.</p>
+
+  <p><strong>Exemplo</strong></p>
+
+  <pre>
+    let sum = 0;
+    function addSum(num) {
+      sum = sum + num;
+    }
+
+    addSum(3);
+  </pre>
+
+  <p><code>addSum</code> é uma função sem uma instrução <code>return</code>. A função vai alterar a variável global <code>sum</code>, mas o valor retornado da função é <code>undefined</code>.</p>
+
+  <p>Crie uma função <code>addFive</code> sem qualquer argumento. Essa função adiciona 5 à variável <code>sum</code>, mas o valor retornado é <code>undefined</code>.</p>
+</body>
+</html>
