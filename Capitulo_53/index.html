@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Conhecer o escopo local e funções</title>
+</head>
+<body>
+  <h1>Conhecer o escopo local e funções</h1>
+
+  <p>Variáveis que são declaradas dentro de uma função, assim como parâmetros das funções, possuem escopo local. Isso significa que elas são visíveis apenas dentro da função.</p>
+
+  <p>Aqui está uma função <code>myTest</code>loc</code>
+     com uma variável local chamada 
+    .</p>
+
+  <pre>
+    function myTest() {
+      const loc = "foo";
+      console.log(loc);
+    }
+    myTest();
+    console.log(loc);
+  </pre><code>loc</code><<code>myTest()</code>sole.log(loc)</code><code>foo</code>
+
+  <p>A chamada da função <<code>console.log</code>lScope</code><code>myVar</code>
+     vai exibir a string 
+     no console. A linha <code>eferenceError: myVar is not defined</code>
+     vai lançar um erro, já que 
+     não foi definido fora da função.</p>
+
+  <p>O editor possui dois 
+     para ajudar você a ver o que está acontecendo. Verifique o console enquanto codifica para ver como muda. Declare uma variável local 
+     dentro de 
+     e rode os testes.</p>
+
+  <p><strong>Observação</strong>: o console ainda exibirá R
+    , mas isso não causará falha nos testes.</p>
+</body>
+</html>
