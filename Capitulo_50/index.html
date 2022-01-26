@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Passar valores para funções com argumentos</title>
+</head>
+<body>
+  <h1>Passar valores para funções com argumentos</h1>
+
+  <p><i>Parâmetros</i> são variáveis que atuam como espaços reservados para os valores que são passados para uma função, quando ela é chamada. Quando uma função é definida, normalmente ela é definida junto com um ou mais parâmetros. Os valores reais que são entradas de (ou "<i>passadas</i>" para) uma função quando ela é chamada são conhecidos como <i>argumentos</i>.</p>
+
+  <p>Aqui está uma função com dois parâmetros, <code>param1</code> e <code>param2</code>:</p>
+
+  <pre>
+    function testFun(param1, param2) {
+      console.log(param1, param2);
+    }
+  </pre>
+
+  <p>Então podemos chamar o testFun dessa forma: <code>testFun("Hello", "World");</code>. Passamos dois argumentos do tipo string, <code>Hello</code> e <code>World</code>. Dentro da função, <code>param1</code> será igual à string <code>Hello</code> e <code>param2</code> será igual à string <code>World</code>. Note que você poderia chamar o <code>testFun</code> novamente com diferentes argumentos e os parâmetros assumiriam o valor dos novos argumentos.</p>
+
+  <ol>
+    <li>Crie uma função chamada <code>functionWithArgs</code> que aceita dois argumentos e exibe seus valores no console de desenvolvimento.</li>
+    <li>Chame a função com dois números como argumentos.</li>
+  </ol>
+</body>
+</html>
