@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Usar a ordem lógica em instruções if else</title>
+</head>
+<body>
+  <h1>Usar a ordem lógica em instruções if else</h1>
+
+  <p>A ordem é importante em instruções <code>if</code> e <code>else if</code>.</p>
+
+  <p>A função é executada de cima para baixo, então você deve ser cuidadoso com qual instrução vem primeiro.</p>
+
+  <p>Tomemos como exemplo estas duas funções.</p>
+
+  <p>Aqui está a primeira:</p>
+
+  <pre>
+    function foo(x) {
+      if (x < 1) {
+        return "Less than one";
+      } else if (x < 2) {
+        return "Less than two";
+      } else {
+        return "Greater than or equal to two";
+      }
+    }
+  </pre>
+
+  <p>A segunda apenas altera a ordem das instruções if e else if:</p>
+
+  <pre>
+    function bar(x) {
+      if (x < 2) {
+        return "Less than two";
+      } else if (x < 1) {
+        return "Less than one";
+      } else {
+        return "Greater than or equal to two";
+      }
+    }
+  </pre>
+
+  <p>Embora as duas funções pareçam praticamente idênticas, se passarmos um número para ambas, teremos saídas diferentes.</p>
+
+  <pre>
+    foo(0)
+    bar(0)
+  </pre>
+
+  <p><code>foo(0)</code> retornará a string <code>Less than one</code> e <code>bar(0)</code> retornará a string <code>Less than two</code>.</p>
+
+  <p>Altere a ordem lógica na função para que retorne as instruções corretas em todos os cenários.</p>
+</body>
+</html>
