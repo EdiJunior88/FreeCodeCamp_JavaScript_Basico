@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Comparar com o operador lógico AND</title>
+</head>
+<body>
+  <h1>Comparar com o operador lógico AND</h1>
+
+  <p>Às vezes, você precisará testar mais de uma coisa de cada vez. O <i>operador</i> lógico AND (<code>&&</code>) retornará true apenas se os <i>operadores</i> à esquerda e à direita forem verdadeiros.</p>
+
+  <p>O mesmo efeito pode ser alcançado aninhando uma instrução if dentro de outro if:</p>
+
+  <pre>
+    if (num > 5) {
+      if (num < 10) {
+        return "Yes";
+      }
+    }
+    return "No";
+  </pre>
+
+  <p>só retornará <code>Yes</code> se <code>num</code> for maior que <code>5</code> e menor que <code>10</code>. A mesma lógica pode ser escrita assim:</p>
+
+  <pre>
+    if (num > 5 && num < 10) {
+      return "Yes";
+    }
+    return "No";
+  </pre>
+
+  <p>Substitua as duas instruções if por uma declaração, usando o operador <code>&&</code>, que vai retornar a string <code>Yes</code> se <code>val</code> for menor ou igual a <code>50</code> e maior ou igual a <code>25</code>. Caso contrário, retornará a string <code>No</code>.</p>
+</body>
+</html>
