@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Comparar com o operador lógico OR</title>
+</head>
+<body>
+  <h1>Comparar com o operador lógico OR</h1>
+
+  <p>O <i>operador lógico</i> OR (<code>||</code>) retorna <code>true</code> se qualquer um dos <i>operandos</i>
+     for <code>true</code>. Caso contrário, retorna <code>false</code>.</p>
+
+  <p>O <i>operador lógico</i> ou é composto por dois símbolos de pipe: (<code>||</code>). Normalmente, ele pode ser encontrado entre as teclas Backspace e Enter.</p>
+
+  <p>O padrão abaixo deve parecer familiar aos pontos das passagens anteriores:</p>
+
+  <pre>
+    if (num > 10) {
+      return "No";
+    }
+    if (num < 5) {
+      return "No";
+    }
+    return "Yes";
+  </pre>
+
+  <p>retornará <code>Yes</code> apenas se <code>num</code> for entre <code>5</code> e <code>10</code> (5 e 10 incluídos). A mesma lógica pode ser escrita assim:</p>
+
+  <pre>
+    if (num > 10 || num < 5) {
+      return "No";
+    }
+    return "Yes";
+  </pre>
+
+  <p>Combine as duas instruções <code>if</code> em uma mesma instrução a qual retorna a string <code>Outside</code> se <code>val</code> não estiver entre <code>10</code> e <code>20</code>, inclusos 10 e 20. Caso contrário, retorna a string <code>Inside</code>.</p>
+</body>
+</html>
