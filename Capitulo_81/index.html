@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Retornar o padrão inicial para funções</title>
+</head>
+<body>
+  <h1>Retornar o padrão inicial para funções</h1>
+
+  <p>Quando uma instrução <code>return</code> é alcançada, a execução da função atual para e retorna o código para o local da chamada da função.</p>
+
+  <p><strong>Exemplo</strong></p>
+
+  <pre>
+    function myFun() {
+      console.log("Hello");
+      return "World";
+      console.log("byebye")
+    }
+    myFun();
+  </pre>
+
+  <p>O código acima exibirá no console a string <code>Hello</code>, e retorna a string <code>World</code>. A string <code>byebye</code> nunca vai ser exibida no console, porque a função termina na instrução <code>return</code>.</p>
+
+  <p>Modifique a função <code>abTest</code> para que se <code>a</code> ou <code>b</code> forem menores que <code>0</code> a função irá imediatamente terminar retornando o valor de <code>undefined</code>.</p>
+
+  <p><strong>Dica</strong></p>
+  <p>Lembre-se de que <a href="https://www.freecodecamp.org/portuguese/learn/javascript-algorithms-and-data-structures/basic-javascript/understanding-uninitialized-variables"><code>undefined é uma palavra-chave</code></a> e não uma string.</p>
+</body>
+</html>
