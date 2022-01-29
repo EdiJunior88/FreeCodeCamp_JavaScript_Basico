@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Substituir cadeias de if else por switch</title>
+</head>
+<body>
+  <h1>Substituir cadeias de if else por switch</h1>
+
+  <p>Se você tiver muitas opções para escolher, uma instrução <code>switch</code> pode ser mais fácil de escrever do que muitas instruções <code>if</code>/<code>else</code> if encadeadas. O seguinte:</p>
+
+  <pre>
+    if (val === 1) {
+      answer = "a";
+    } else if (val === 2) {
+      answer = "b";
+    } else {
+      answer = "c";
+    }
+  </pre>
+
+  <p>pode ser substituído por:</p>
+
+  <pre>
+    switch(val) {
+      case 1:
+        answer = "a";
+        break;
+      case 2:
+        answer = "b";
+        break;
+      default:
+        answer = "c";
+    }
+  </pre>
+
+  <p>Altere a cadeia de instruções <code>if</code>/<code>else</code> if por um comando <code>switch</code>.</p>
+</body>
+</html>
