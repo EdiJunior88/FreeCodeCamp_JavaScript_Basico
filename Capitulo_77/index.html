@@ -6,35 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <script src="index.js"></script>
-  <title>Jogar golfe de código</title>
+  <title>Adicionar uma opção padrão em instruções switch</title>
 </head>
 <body>
-  <h1>Jogar golfe de código</h1>
+  <h1>Adicionar uma opção padrão em instruções switch</h1>
 
-  <p>Se você possui muitas opções pra escolher, use uma instrução <i>switch</i>. Uma instrução <code>switch</code> testa um valor e pode ter muitas instruções <i>case</i> as quais definem os diversos valores possíveis. As instruções são executadas desde o primeiro <code>case</code> correspondente até que seja encontrado um <code>break</code>.</p>
+  <p>Na instrução <code>switch</code>, você não deve ser capaz de especificar todos os possíveis valores como instruções <code>case</code>. Ao invés disso, você pode adicionar a instrução <code>default</code>, que será executada se nenhuma instrução case correspondente for encontrada. Pense nisso como a instrução final <code>else</code> em uma cadeia de <code>if/else</code>.</p>
 
-  <p>Aqui está um exemplo de uma instrução <code>switch</code>:</p>
+  <p>A instrução <code>default</code> deve ser o último caso.</p>
 
   <pre>
-    switch(lowercaseLetter) {
-      case "a":
-        console.log("A");
+    switch (num) {
+      case value1:
+        statement1;
         break;
-      case "b":
-        console.log("B");
+      case value2:
+        statement2;
+        break;
+    ...
+      default:
+        defaultStatement;
         break;
     }
   </pre>
 
-  <p>Valores <code>case</code> são testados com o operador de igualdade estrita (<code>===</code>). O <code>break</code> diz ao JavaScript parar interromper a execução das instruções. Se o <code>break</code> for omitido, a próxima instrução case será executada.</p>
+  <p>Escreva a instrução switch para definir <code>answer</code> para as seguintes condições:</p>
 
-  <p>Escreva uma instrução switch que testa <code>val</code> e define <code>answer</code> para as seguintes condições:</p>
-
-  <ol>
-    <li><code>alpha</code></li>
-    <li><code>beta</code></li>
-    <li><code>gamma</code></li>
-    <li><code>delta</code></li>
+  <ol type="a">
+    <li><code>apple</code></li>
+    <li><code>bird</code></li>
+    <li><code>cat</code></li>
+    <li><code>default - stuff</code></li>
   </ol>
 </body>
 </html>
