@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Acessar propriedades de objeto com notação de colchetes</title>
+</head>
+<body>
+  <h1>Acessar propriedades de objeto com notação de colchetes</h1>
+
+  <p>A segunda forma para acessar as propriedades de um objeto é a notação de colchetes (<code>[]</code>). Se a propriedade do objeto que você está tentando acessar possui um espaço no seu nome, você precisará usar a notação de colchetes.</p>
+
+  <p>No entanto, você ainda pode usar a notação de colchetes nas propriedades dos objetos sem espaços.</p>
+
+  <p>Aqui está um exemplo usando a notação de colchetes para ler uma propriedade de um objeto:</p>
+
+  <pre>
+    const myObj = {
+      "Space Name": "Kirk",
+      "More Space": "Spock",
+      "NoSpace": "USS Enterprise"
+    };
+
+    myObj["Space Name"];
+    myObj['More Space'];
+    myObj["NoSpace"];
+  </pre>
+
+  <p><code>myObj["Space Name"]</code> seria a string <code>Kirk</code>, <code>myObj['More Space']</code> seria a string <code>Spock</code> e myObj["NoSpace"] seria a string <code>USS Enterprise</code>.</p>
+
+  <p>Note que os nomes das propriedades com espaços neles precisam estar entre aspas (simples ou duplas).</p>
+
+  <p>Leia os valores das propriedades <code>an entree</code> e <code>the drink</code> de <code>testObj</code> usando notação de colchetes e atribua-os a <code>entreeValue</code> e <code>drinkValue</code> respectivamente.</p>
+</body>
+</html>
