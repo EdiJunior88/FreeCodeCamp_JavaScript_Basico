@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Criar objetos JavaScript</title>
+</head>
+<body>
+  <h1>Criar objetos JavaScript</h1>
+
+  <p>Você talvez tenha ouvido o termo <code>objeto</code> antes.</p>
+
+  <p>Objetos são similares a <code>arrays</code>, exceto que, ao invés de usar índices para acessar e modificar seus dados, você acessa os dados em objetos através do que se chama <code>propriedades</code>.</p>
+  
+  <p>Objetos são úteis para armazenar dados de forma estruturada e podem representar objetos do mundo real, como um gato.</p>
+  
+  <p>Aqui está um exemplo de objeto gato:</p>
+  
+  <pre>
+    const cat = {
+      "name": "Whiskers",
+      "legs": 4,
+      "tails": 1,
+      "enemies": ["Water", "Dogs"]
+    };
+  </pre>
+
+  <p>Neste exemplo, todas as propriedades são armazenadas como strings, como <code>name</code>, <code>legs</code> e <code>tails</code>. Porém, você também pode usar números como propriedades. Você pode até omitir as aspas para propriedades de string com uma única palavra, da seguinte forma:</p>
+  
+  <pre>
+    const anotherObject = {
+      make: "Ford",
+      5: "five",
+      "model": "focus"
+    };
+  </pre>
+
+  <p>No entanto, se seu objeto tem quaisquer propriedades que não sejam strings, o JavaScript automaticamente definirá seus tipos como strings.</p>
+  
+  <p>Faça um objeto que representa um cachorro chamado <code>myDog</code> que contém as propriedades <code>name</code> (uma string), <code>legs</code>, <code>tails</code> e <code>friends</code>.</p>
+  
+  <p>Você pode definir essas propriedades do objeto para os valores que deseja, contanto que <code>name</code> seja uma string, <code>legs</code> e <code>tails</code> sejam números, e <code>friends</code> seja um array.</p>
+</body>
+</html>
