@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Lidar com várias opções idênticas em instruções switch</title>
+</head>
+<body>
+  <h1>Lidar com várias opções idênticas em instruções switch</h1>
+
+  <p>Se a instrução <code>break</code> for omitida de uma instrução <code>case</code> de um <code>switch</code>, as instruções <code>case</code> seguintes serão executadas até que seja encontrado um <code>break</code>. Se você tem várias entradas com a mesma saída, você pode representá-las em uma instrução <code>switch</code> da seguinte forma:</p>
+
+  <pre>
+    let result = "";
+    switch(val) {
+      case 1:
+      case 2:
+      case 3:
+        result = "1, 2, or 3";
+        break;
+      case 4:
+        result = "4 alone";
+    }
+  </pre>
+
+  <p>Todos os casos para 1, 2 e 3 vão produzir o mesmo resultado.</p>
+
+  <p>Escreva uma instrução para definir <code>answer</code> para os seguintes intervalos:</p>
+
+  <ul type="none">
+    <li><code>1-3</code> - <code>Low</code></li>
+    <li><code>4-6</code> - <code>Mid</code></li>
+    <li><code>7-9</code> - <code>High</code></li>
+  </ul>
+
+  <p><strong>Observação</strong>: você precisará ter uma instrução <code>case</code> para cada número no intervalo.</p>
+</body>
+</html>
