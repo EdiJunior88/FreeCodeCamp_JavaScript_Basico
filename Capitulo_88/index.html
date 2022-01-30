@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Adicionar novas propriedades para um objeto JavaScript</title>
+</head>
+<body>
+  <h1>Adicionar novas propriedades para um objeto JavaScript</h1>
+
+  <p>Você pode adicionar novas propriedades para um objeto JavaScript existente da mesma forma pela qual você os modificaria.</p>
+
+  <p>Aqui está como adicionaríamos uma propriedade <code>bark</code> para <code>ourDog</code>:</p>
+
+  <pre>
+    ourDog.bark = "bow-wow";
+  </pre>
+  
+  <p>ou</p>
+
+  <pre>
+    ourDog["bark"] = "bow-wow";
+  </pre>
+
+  <p>Agora, quando acessamos <code>ourDog.bark</code>, nós teremos o seu latido, <code>bow-wow</code>.</p>
+
+  <p><strong>Exemplo</strong>:</p>
+
+  <pre>
+    const ourDog = {
+      "name": "Camper",
+      "legs": 4,
+      "tails": 1,
+      "friends": ["everything!"]
+    };
+    ourDog.bark = "bow-wow";
+  </pre>
+
+  <p>Adicione a propriedade <code>bark</code> para <code>myDog</code> e defina-a para um som de um cachorro, como "woof". Você pode usar tanto notação de ponto quando de colchetes.</p>
+</body>
+</html>
