@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Usar objetos para pesquisas</title>
+</head>
+<body>
+  <h1>Usar objetos para pesquisas</h1>
+
+  <p>Objetos podem ser pensados como armazenamento de chave/valor, como um dicionário. Se você tem um dado tabular, você pode usar um objeto para pesquisar valores ao invés de uma instrução <code>switch</code>if/else</code>
+     ou uma cadeia de 
+    . Isso é mais útil quando você sabe que o seu dado de entrada é limitado para um certo intervalo.</p>
+
+  <p>Aqui está um exemplo de uma simples pesquisa reversa no alfabeto:</p>
+
+  <pre>
+    const alpha = {
+      1:"Z",
+      2:"Y",
+      3:"X",
+      4:"W",
+      ...
+      24:"C",
+      25:"B",
+      26:"A"
+    };
+
+    alpha[2];
+    alpha[24];
+
+    const value = 2;
+    alpha[value];
+  </p<code>alpha[2]</code>>Y</code><co<code>Y</code>e><code>alpha[24]</code>ue]</code><code>C</code>
+
+  <p><code>result</code><code>val</code><code>lookup</code>
+     é a string 
+    , 
+     é a string 
+     e 
+     é a string 
+    .</p>
+
+  <p>Converta a instrução switch em um objeto chamado 
+    . Use-o para pesquisar por 
+     e atribua a string associada para a variável 
+    .</p>
+</body>
+</html>
