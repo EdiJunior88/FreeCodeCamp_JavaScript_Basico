@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Excluir propriedades de um objeto JavaScript</title>
+</head>
+<body>
+  <h1>Excluir propriedades de um objeto JavaScript</h1>
+
+  <p>Podemos também excluir propriedades de objetos dessa forma:</p>
+
+  <pre>
+    delete ourDog.bark;
+  </pre>
+
+  <p>Exemplo:</p>
+
+  <pre>
+    const ourDog = {
+      "name": "Camper",
+      "legs": 4,
+      "tails": 1,
+      "friends": ["everything!"],
+      "bark": "bow-wow"
+    };
+
+    delete ourDog.bark;
+  </pre>
+
+  <p>Após a última linha mostrada acima, <code>ourDog</code> se parece com:</p>
+
+  <pre>
+    {
+      "name": "Camper",
+      "legs": 4,
+      "tails": 1,
+      "friends": ["everything!"]
+    }
+  </pre>
+
+  <p>Exclua a propriedade <code>tails</code> de <code>myDog</code>. Você pode usar tanto notação de ponto quanto notação de colchetes.</p>
+</body>
+</html>
