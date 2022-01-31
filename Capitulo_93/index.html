@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Acessar objetos aninhados</title>
+</head>
+<body>
+  <h1>Acessar objetos aninhados</h1>
+
+  <p>As subpropriedades de objetos podem ser acessadas ao encadear a notação de ponto e de colchetes.</p>
+
+  <p>Aqui está um objeto aninhado:</p>
+
+  <pre>
+    const ourStorage = {
+      "desk": {
+        "drawer": "stapler"
+      },
+      "cabinet": {
+        "top drawer": {
+          "folder1": "a file",
+          "folder2": "secrets"
+        },
+        "bottom drawer": "soda"
+      }
+    };
+    
+    ourStorage.cabinet["top drawer"].folder2;
+    ourStorage.desk.drawer;
+  </pre>
+
+  <p><code>ourStorage.cabinet["top drawer"].folder2</code> seria a string secrets e <code>ourStorage.desk.drawer</code> seria a string <code>stapler</code>.</p>
+
+  <p>Acesse o objeto <code>myStorage</code> e atribua o conteúdo da propriedade <code>glove box</code> para a variável <code>gloveBoxContents</code>. Use notação de ponto para todas as propriedades sempre que possível, caso contrário, use a notação de colchetes.</p>
+</body>
+</html>
