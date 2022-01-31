@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Manipular objetos complexos</title>
+</head>
+<body>
+  <h1>Manipular objetos complexos</h1>
+
+  <p>Às vezes, você pode querer armazenar dados em uma <i>Estrutura de Dados flexível</i>. Um objeto JavaScript é uma forma de lidar com dados flexíveis. Eles permitem combinações arbitrárias de <i>strings, numbers, booleans, arrays, functions e objects</i>.</p>
+
+  <p>Aqui está um exemplo de estrutura de dados complexas:</p>
+
+  <pre>
+    const ourMusic = [
+      {
+        "artist": "Daft Punk",
+        "title": "Homework",
+        "release_year": 1997,
+        "formats": [
+          "CD",
+          "Cassette",
+          "LP"
+        ],
+        "gold": true
+      }
+    ];
+  </pre>
+
+  <p>Este é um array que contém um objeto dentro dele. O objeto possui vários pedaços de metadados sobre um álbum. Também possui um array aninhado <code>formats</code>. Se você quiser adicionar mais álbuns, você pode fazer isso adicionando os discos ao array de alto nível. Objetos armazenam dados em uma propriedade, a qual possui um formato de chave-valor. No exemplo acima, <code>"artist": "Daft Punk"</code> é uma propriedade que tem uma chave <code>artist</code> e um valor de <code>Daft Punk</code>. <a href="https://www.json.org/json-en.html">JavaScript Object Notation</a> ou <code>JSON</code> é um formato de intercâmbio de dados relacionados usado para armazenar dados.</p>
+
+  <pre>
+    {
+      "artist": "Daft Punk",
+      "title": "Homework",
+      "release_year": 1997,
+      "formats": [
+        "CD",
+        "Cassette",
+        "LP"
+      ],
+      "gold": true
+    }
+  </pre>
+
+  <p><strong>Observação</strong>: você precisará colocar uma vírgula após cada objeto no array, a não ser que ele seja o último objeto no array.</p>
+
+  <p>Adicione um novo álbum para o array <code>myMusic</code>. Adicione as strings <code>artist</code> e <code>title</code>, o número <code>release_year</code> e um array de strings <code>formats</code>.</p>
+</body>
+</html>
