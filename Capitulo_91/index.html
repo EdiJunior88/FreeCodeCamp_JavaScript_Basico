@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Testar objetos por propriedades</title>
+</head>
+<body>
+  <h1>Testar objetos por propriedades</h1>
+
+  <p>Às vezes, é útil verificar se a propriedade de um determinado objeto existe ou não. Podemos usar o método de objetos <code>.hasOwnProperty(propname)</code> para determinar se aquele objeto possui o nome de propriedade fornecido. <code>.hasOwnProperty()</code> retorna <code>true</code> ou <code>false</code> se a propriedade for encontrada ou não.</p>
+
+  <p><strong>Exemplo</strong></p>
+
+  <pre>
+    const myObj = {
+      top: "hat",
+      bottom: "pants"
+    };
+
+    myObj.hasOwnProperty("top");
+    myObj.hasOwnProperty("middle");
+  </pre>
+
+  <p>O primeiro <code>hasOwnProperty</code> retorna <code>true</code>, enquanto o segundo retorna <code>false</code>.</p>
+
+  <p>Modifique a função <code>checkObj</code> para verificar se um objeto passado para a função (<code>obj</code>) contém uma propriedade específica (<code>checkProp</code>). Se a propriedade for encontrada, retorne o valor da propriedade. Se não, retorne <code>"Not Found"</code>.</p>
+</body>
+</html>
