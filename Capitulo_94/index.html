@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Acessar arrays aninhados</title>
+</head>
+<body>
+  <h1>Acessar arrays aninhados</h1>
+
+  <p>Como vimos em exemplos anteriores, objetos podem conter tanto objetos aninhados quanto arrays aninhados. Semelhante ao acesso de objetos aninhados, a notação de colchetes pode ser encadeada para se acessar arrays aninhados.</p>
+
+  <p>Aqui está um exemplo de como se acessar um array aninhado:</p>
+
+  <pre>
+    const ourPets = [
+      {
+        animalType: "cat",
+        names: [
+          "Meowzer",
+          "Fluffy",
+          "Kit-Cat"
+        ]
+      },
+      {
+        animalType: "dog",
+        names: [
+          "Spot",
+          "Bowser",
+          "Frankie"
+        ]
+      }
+    ];
+
+    ourPets[0].names[1];
+    ourPets[1].names[0];
+  </pre>
+
+  <p><code>ourPets[0].names[1]</code> seria a string Fluffy e <code>ourPets[1].names[0]</code> seria a string <code>Spot</code>.</p>
+
+  <p>Usando a notação de ponto e de colchetes, defina a variável <code>secondTree</code> para o segundo item na lista de <code>trees</code> do objeto <code>myPlants</code>.</p>
+</body>
+</html>
