@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Usar recursão para criar uma contagem regressiva</title>
+</head>
+<body>
+  <h1>Usar recursão para criar uma contagem regressiva</h1>
+
+  <p>Em um <a href="https://www.freecodecamp.org/portuguese/learn/javascript-algorithms-and-data-structures/basic-javascript/replace-loops-using-recursion">desafio anterior</a>, você aprendeu como usar recursão para substituir laços <code>for</code>. Agora, vamos analisar uma função mais complexa, a qual retorna um array de inteiros consecutivos começando com <code>1</code> até o número passado para a função.</p>
+
+  <p>Como mencionado no desafio anterior, haverá um caso de base. O caso de base diz a função recursiva quando ela não precisa mais chamar a si. É um simples caso onde o valor de retorno já é conhecido. Também haverá uma chamada recursiva, a qual executa a função original com argumentos diferentes. Se a função for escrita corretamente, eventualmente o caso de base será alcançado.</p>
+
+  <p>Por exemplo, vamos dizer que você quer escrever uma função recursiva que retorna um array contendo os números de <code>1</code> até <code>n</code>. Essa função precisará aceitar um argumento, <code>n</code>, representando o número final. Então, ela precisará chamar a si mesma com valores progressivamente menores, começando em <code>n</code> até chegar a <code>1</code>. Você poderia escrever a função da seguinte forma:</p>
+
+  <pre>
+    function countup(n) {
+      if (n < 1) {
+        return [];
+      } else {
+        const countArray = countup(n - 1);
+        countArray.push(n);
+        return countArray;
+      }
+    }
+    console.log(countup(5));
+  </pre>
+
+  <p>O valor <code>[1, 2, 3, 4, 5]</code> será exibido no console.</p>
+
+  <p>Inicialmente, isso parece contraintuitivo já que o valor de <code>n</code> diminui, mas os valores no array final estão em ordem crescente. Isso acontece porque a adição no array (push) acontece por último, após a chamada recursiva ter retornado. No ponto onde <code>n</code> é adicionado ao array, <code>countup(n - 1)</code> já foi avaliado e retornou <code>[1, 2, ..., n -1]</code>.</p>
+
+  <p>Definimos uma função chamada <code>countdown</code> com um parâmetro (<code>n</code>). A função deve usar recursão para retornar um array contendo inteiros <code>n</code> até <code>1</code> com base no parâmetro <code>n</code>. Se a função é chamada com um número menor que 1, a função deve retornar um array vazio. Por exemplo, chamar essa função com <code>n = 5</code> deve retornar o array <code>[5, 4, 3, 2, 1]</code>. Sua função precisa usar recursão para chamar a si mesma e não depender de nenhum tipo de laço.</p>
+</body>
+</html>
