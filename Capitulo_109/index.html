@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Usar a função parseInt com um radix</title>
+</head>
+<body>
+  <h1>Usar a função parseInt com um radix</h1>
+
+  <p>A função <code>parseInt()</code> analisa uma string e retorna um inteiro. É preciso um segundo argumento para o radix, que especifica a base do número na string. O radix pode ser um inteiro entre 2 e 36.</p>
+
+  <p>A chamada da função se parece com:</p>
+
+  <pre>
+    parseInt(string, radix);
+  </pre>
+
+  <p><strong>Exemplo</strong>:</p>
+
+  <pre>
+    const a = parseInt("11", 2);
+  </pre>
+
+  <p>A variável radix diz que <code>11</code> está no sistema binário, ou base <code>2</code>. Esse exemplo converte a string <code>11</code> para um inteiro <code>3</code>.</p>
+
+  <p>Use <code>parseInt()</code> na função <code>convertToInteger</code> para que ela converta um número binário em um inteiro e o retorne.</p>
+</body>
+</html>
