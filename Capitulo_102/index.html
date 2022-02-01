@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Iterar com laços do...while em JavaScript</title>
+</head>
+<body>
+  <h1>Iterar com laços do...while em JavaScript</h1>
+
+  <p>O próximo tipo de laço que você aprenderá é chamado de laço <code>do...while</code>. O laço <code>do...while</code> é chamado assim porque primeiro fará algo (<code>do</code>) ou executará algo uma vez dentro do bloco de código, não importando o que acontecer. Em seguida, continuará a executar o laço enquanto (<code>while</code>) a condição for <code>true</code>.</p>
+
+  <pre>
+    const ourArray = [];
+    let i = 0;
+
+    do {
+      ourArray.push(i);
+      i++;
+    } while (i < 5);
+  </pre>
+
+  <p>O exemplo acima se comporta de forma similar a outros tipos de laços, e o array resultante se parecerá com <code>[0,1,2,3,4]</code>. No entanto, o que torna o laço <code>do...while</code> diferente de outros laços é como ele se comporta quando uma condição falha na primeira verificação. Vamos ver isso na prática: Aqui está um laço comum <code>while</code> que rodará o código no laço enquanto <code>i < 5</code>:</p>
+
+  <pre>
+    const ourArray = [];
+    let i = 5;
+
+    while (i < 5) {
+      ourArray.push(i);
+      i++;
+    }
+  </pre>
+
+  <p>Nesse exemplo, inicializamos o valor de <code>ourArray</code> como um array vazio e o valor de <code>i</code> sendo 5. Quando executamos o laço <code>while</code>, a condição é igual a <code>false</code> porque <code>i</code> não é menor que 5, portanto nós não executamos o código dentro do laço. O resultado é que <code>ourArray</code> terminará sem valores adicionados a ele, e ainda se parecerá com <code>[]</code> quando todas as linhas do código no exemplo acima forem completamente executadas. Agora, dê uma olhada no laço <code>do...while</code>:</p>
+
+  <pre>
+    const ourArray = [];
+    let i = 5;
+    do {
+
+      ourArray.push(i);
+      i++;
+    } while (i < 5);
+  </pre>
+
+  <p>Nesse caso, nós inicializamos o valor de <code>i</code> para 5, assim como fizemos com o laço <code>while</code>. Quando chegamos na próxima linha, não há condição a ser analisada, então nós vamos ao código dentro das chaves e o executamos. Nós adicionaremos um único elemento ao array e então incrementamos <code>i</code> antes de chegarmos à verificação da condição. Quando nós finalmente temos o resultado da condição <code>i < 5</code> na última linha, nós notamos que <code>i</code> agora é 6, o que não cumpre a verificação da condição, então nós saímos do laço e terminamos. Ao final do exemplo acima, o valor de <code>ourArray</code> é <code>[5]</code>. Essencialmente, um laço <code>do...while</code> garante que o código dentro do laço será executado pelo menos uma vez. Vamos tentar fazer um laço <code>do...while</code> funcionar inserindo valores em um array.</p>
+
+  <p>Altere o laço <code>while</code> no código para um laço <code>do...while</code> para que o laço adicione apenas o número <code>10</code> no <code>myArray</code> e <code>i</code> será igual a <code>11</code> quando seu código terminar de rodar.</p>
+</body>
+</html>
