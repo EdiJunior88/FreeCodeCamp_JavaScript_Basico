@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Substituir laços usando recursão</title>
+</head>
+<body>
+  <h1>Substituir laços usando recursão</h1>
+
+  <p>Recursão é o conceito de que uma função pode ser chamada por ela mesma. Para ajudar a entender isso, comece a pensar sobre a seguinte tarefa: multiplique os primeiros <code>n</code> elementos de um array para criar o produto desses elementos. Usando um laço <code>for</code>, você poderia fazer isso:</p>
+
+  <pre>
+    function multiply(arr, n) {
+      let product = 1;
+      for (let i = 0; i < n; i++) {
+        product *= arr[i];
+      }
+      return product;
+    }
+  </pre>
+
+  <p>No entanto, note que<code> multiply(arr, n) == multiply(arr, n - 1) * arr[n - 1]</code>. Isso significa que você pode reescrever <code>multiply</code> dentro da própria função e nunca precisar usar um laço.</p>
+
+  <pre>
+    function multiply(arr, n) {
+      if (n <= 0) {
+        return 1;
+      } else {
+        return multiply(arr, n - 1) * arr[n - 1];
+      }
+    }
+  </pre>
+
+  <p>A versão recursiva de <code>multiply</code> fica dessa forma. No caso de base, onde <code>n <= 0</code>, ele retorna 1. Para valores maiores de <code>n</code>, a função chama a si mesma, mas com <code>n - 1</code>. Essa chamada da função é avaliada da mesma forma, chamando <code>multiply</code> novamente até que <code>n <= 0</code>. Nesse ponto, todas as funções podem retornar e a função <code>multiply</code> original retorna a resposta.</p>
+
+  <p><strong>Observação</strong>: funções recursivas precisam ter um caso de base quando elas retornam sem chamar a função novamente (nesse exemplo, quando <code>n <= 0</code>), caso contrário, elas nunca vão parar de executar.</p>
+
+  <p>Escreva uma função recursiva, <code>sum(arr, n)</code>, que retorna a soma dos primeiros <code>n</code> elementos de um array <code>arr</code>.</p>
+</body>
+</html>
