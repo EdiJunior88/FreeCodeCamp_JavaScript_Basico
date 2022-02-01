@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Iterar através de um array com laço for</title>
+</head>
+<body>
+  <h1>Iterar através de um array com laço for</h1>
+
+  <p>Uma tarefa comum em JavaScript é para iterar através do conteúdo de um array. Uma forma de fazer isso é com um laço <code>for</code>. Esse código vai exibir cada elemento do array <code>arr</code> no console:</p>
+
+  <pre>
+    const arr = [10, 9, 8, 7, 6];
+
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    }
+  </pre>
+
+  <p>Lembre-se de que arrays têm indexação baseada em zero, o que significa que o último índice do array é de <code>length - 1</code>. Nossa condição para esse laço é <code>i < arr.length</code>, que interrompe o laço quando <code>i</code> é igual a <code>length</code>. Nesse caso a última iteração é <code>i === 4</code>, ou seja, quando <code>i</code> se tornar igual a <code>arr.length - 1</code> e exibir <code>6</code> no console. Em seguida, i aumenta para 5, e o laço é interrompido porque <code>i < arr.length</code> é <code>false</code>.</p>
+
+  <p>Declare e inicialize uma variável <code>total</code> como <code>0</code>. Use um laço <code>for</code> para adicionar o valor de cada elemento do array <code>myArr</code> para <code>total</code>.</p>
+</body>
+</html>
