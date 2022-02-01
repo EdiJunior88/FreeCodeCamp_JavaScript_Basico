@@ -1,0 +1,28 @@
+pre {
+  width: auto;
+  height: auto;
+  background: rgb(207, 229, 155);
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+code {
+  background: rgba(189, 187, 187, 0.61);
+  font-weight: bold;
+  padding: 1.5px;
+}
+
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+}
+
+thead tr th,
+tbody tr td {
+  padding: 10px 30px;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background: rgb(221, 220, 220);
+}

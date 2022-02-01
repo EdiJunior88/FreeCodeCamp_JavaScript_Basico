@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Usar o operador condicional (ternário)</title>
+</head>
+<body>
+  <h1>Usar o operador condicional (ternário)</h1>
+
+  <p>O operador condicional, também chamado de operador ternário, pode ser usado como uma expressão if-else de uma linha.</p>
+
+  <p>A sintaxe é <code>a ? b : c</code>, onde <code>a</code> é a condição, <code>b</code> é o código executado quando a condição retorna <code>true</code> e <code>c</code> é o código executado quando a condição retorna <code>false</code>.</p>
+
+  <p>A função a seguir usa a instrução <code>if/else</code> para verificar uma condição:</p>
+
+  <pre>
+    function findGreater(a, b) {
+      if(a > b) {
+        return "a is greater";
+      }
+      else {
+        return "b is greater or equal";
+      }
+    }
+  </pre>
+
+  <p>Isto pode ser reescrito usando o operador condicional:</p>
+
+  <pre>
+    function findGreater(a, b) {
+      return a > b ? "a is greater" : "b is greater or equal";
+    }
+  </pre>
+
+  <p>Use o operador condicional na função <code>checkEqual</code> para verificar se dois números são iguais ou não. A função deve retornar ou a string <code>Equal</code> ou a string <code>Not Equal</code>.</p>
+</body>
+</html>
