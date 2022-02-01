@@ -6,25 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <script src="index.js"></script>
-  <title>Iterar números ímpares com um laço for</title>
+  <title>Contar para trás com um laço for</title>
 </head>
 <body>
-  <h1>Iterar números ímpares com um laço for</h1>
+  <h1>Contar para trás com um laço for</h1>
 
-  Laços for não tem de iterar um de cada vez. Ao alterar nossa <code>final-expression</code>, nós podemos contar os números pares.
+  <p>Um laço for também pode contar pra trás, contanto que possamos definir as condições certas.</p>
 
-  Começaremos em <code>i = 0</code> e um laço while <code>i < 10</code>. Incrementaremos <code>i</code> em 2 a cada iteração com <code>i += 2</code>.
+  <p>Para decrementar em dois cada iteração, nós precisamos alterar nossa inicialização, condição e expressão final.</p>
+
+  <p>Nós começaremos em <code>i = 10</code> e vamos iterar enquanto <code>i > 0</code>. Nós decrementamos <code>i</code> por dois em cada iteração com <code>i -= 2</code>.</p>
 
   <pre>
     const ourArray = [];
 
-    for (let i = 0; i < 10; i += 2) {
+    for (let i = 10; i > 0; i -= 2) {
       ourArray.push(i);
     }
   </pre>
 
-  <code>ourArray</code> agora conterá <code>[0, 2, 4, 6, 8]</code>. Vamos mudar nossa <code>initialization</code> para que possamos contar por números ímpares.
+  <p><code>ourArray</code> agora vai conter <code>[10, 8, 6, 4, 2]</code>. Vamos mudar nossa inicialização e expressão final para que possamos contar para trás em dois para criar um array de números ímpares decrescentes.</p>
 
-  Adicione (push) os números ímpares de 9 até 1 para <code>myArray</code> usando um laço <code>for</code>.
+  <p>Adicione (push) os números ímpares de 9 até 1 para <code>myArray</code> usando um laço <code>for</code>.</p>
 </body>
 </html>
