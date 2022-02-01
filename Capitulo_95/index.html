@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Exibir uma coleção de discos</title>
+</head>
+<body>
+  <h1>Exibir uma coleção de discos</h1>
+
+  <p>Você recebeu um objeto literal representando uma parte da sua coleção de álbuns musicais. Cada álbum possui um número de id único como sua chave e diversas outras propriedades. Nem todos os álbuns possuem informações completas.</p>
+
+  <p>Você começa com uma função <code>updateRecords</code> que recebe um objeto literal, <code>records</code>, contendo a coleção de álbuns musicais, um <code>id</code>, uma <code>prop</code>(like <code>artist</code> ou <code>tracks</code>) e um <code>value</code>. Complete a função usando as regras abaixo para modificar o objeto passado para a função.</p>
+  
+  <ul>
+    <li>A função precisa sempre retornar o objeto de coleção de discos completo.</li>
+    <li>Se <code>prop</code> não for <code>tracks</code> e <code>value</code> não for uma string vazia, atualize ou defina aquela <code>prop</code> do álbum como <code>value</code>.</li>
+    <li>Se <code>prop</code> for <code>tracks</code> mas o álbum não tiver uma propriedade <code>tracks</code>, crie um array vazio e adicione o <code>value</code> nesse array.</li>
+    <li>Se <code>prop</code> for <code>tracks</code> e <code>value</code> não for uma string vazia, adicione <code>value</code> ao final do array existente de <code>tracks</code> do álbum.</li>
+    <li>Se <code>value</code> for uma string vazia, remova a propriedade prop recebida do álbum.</li>
+  </ul>
+
+  <p>Observação: uma cópia do objeto <code>recordCollection</code> é usada para testes.</p>
+</body>
+</html>
