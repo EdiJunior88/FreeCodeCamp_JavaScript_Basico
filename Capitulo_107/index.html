@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Gerar números inteiros aleatórios dentro de um intervalo</title>
+</head>
+<body>
+  <h1>Gerar números inteiros aleatórios dentro de um intervalo</h1>
+
+  <p>Ao invés de gerar um número inteiro aleatório entre 0 e um número especificado, como fizemos anteriormente, nós podemos gerar um número inteiro aleatório que fica em um intervalo entre dois números especificados.</p>
+
+  <p>Para isso, definiremos um número mínimo <code>min</code> e um número máximo <code>max</code>.</p>
+
+  <p>Aqui está a fórmula que usaremos. Leve um momento para ler e entender o que esse código está fazendo:</p>
+
+  <pre>
+    Math.floor(Math.random() * (max - min + 1)) + min
+  </pre>
+
+  <p>Crie uma função chamada <code>randomRange</code> que recebe um intervalo de <code>myMin</code> e <code>myMax</code> e retorne um número inteiro aleatório que é maior ou igual a <code>myMin</code>, e é menor ou igual a <code>myMax</code>.</p>
+</body>
+</html>
