@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Iterar através de um array com laço for</title>
+</head>
+<body>
+  <h1>Iterar através de um array com laço for</h1>
+
+  <p>Se você possui um array multidimensional, você pode usar a mesma lógica no ponto de passagem anterior para iterar através de arrays e de qualquer sub-array. Exemplo:</p>
+
+  <pre>
+    const arr = [
+      [1, 2], [3, 4], [5, 6]
+    ];
+
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = 0; j < arr[i].length; j++) {
+        console.log(arr[i][j]);
+      }
+    }
+  </pre>
+
+  <p>Isso exibe no console cada subelemento dentro de <code>arr</code>, um de cada vez. Note que para o laço interno, nós estamos verificando a propriedade <code>.length</code> de <code>arr[i]</code>, desde que <code>arr[i]</code> também seja um array.</p>
+
+  <p>Modifique a função <code>multiplyAll</code> para que retorne o produto de todos os números nos sub-arrays de <code>arr</code>.</p>
+</body>
+</html>
