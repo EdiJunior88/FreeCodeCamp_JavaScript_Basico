@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Usar operadores de múltiplas condições (ternários)</title>
+</head>
+<body>
+  <h1>Usar operadores de múltiplas condições (ternários)</h1>
+
+  <p>No desafio anterior, você usou um único operador condicional. Você também pode encadear eles juntos para verificar por múltiplas condições.</p>
+
+  <p>A seguinte função usa as instruções <code>if</code>, <code>else if</code> e <code>else</code> para verificar múltiplas condições:</p>
+
+  <pre>
+    function findGreaterOrEqual(a, b) {
+      if (a === b) {
+        return "a and b are equal";
+      }
+      else if (a > b) {
+        return "a is greater";
+      }
+      else {
+        return "b is greater";
+      }
+    }
+  </pre>
+
+  <p>A função acima pode ser rescrita usando operadores de múltiplas condições (operador ternário):</p>
+
+  <pre>
+    function findGreaterOrEqual(a, b) {
+      return (a === b) ? "a and b are equal"
+        : (a > b) ? "a is greater"
+        : "b is greater";
+    }
+  </pre>
+
+  <p>É considerada a melhor prática para formatar operadores de múltiplas condições, já que cada condição está em uma linha separada, como mostrado acima. Usar operadores de múltiplas condições sem a indentação adequada pode dificultar a leitura do seu código. Por exemplo:</p>
+
+  <pre>
+    function findGreaterOrEqual(a, b) {
+      return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
+    }
+  </pre>
+
+  <p>Na função <code>checkSign</code>, use operadores de múltiplas condições - seguindo o formato recomendado usado em <code>findGreaterOrEqual</code> - para verificar se um número é positivo, negativo ou zero. A função deve retornar <code>positive</code>, <code>negative</code> ou <code>zero</code>.</p>
+</body>
+</html>
