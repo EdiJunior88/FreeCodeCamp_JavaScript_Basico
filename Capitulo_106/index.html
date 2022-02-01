@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Gerar números inteiros aleatórios com JavaScript</title>
+</head>
+<body>
+  <h1>Gerar números inteiros aleatórios com JavaScript</h1>
+
+  <p>É ótimo podermos gerar números decimais aleatórios, mas é ainda mais útil se usarmos isso para gerar números inteiros aleatórios.</p>
+
+  <ol>
+    <li>Use <code>Math.random()</code> para gerar um decimal aleatório.</li>
+    <li>Multiplique o decimal aleatório por <code>20</code>.</li>
+    <li>Use outra função, <code>Math.floor()</code> para arredondar o número para baixo para o número inteiro mais próximo.</li>
+  </ol>
+
+  <p>Lembre-se de que <code>Math.random()</code> pode nunca retornar um <code>1</code> e, por estarmos arredondando, é impossível também receber <code>20</code>. Essa técnica nos dará um número inteiro entre <code>0</code> e <code>19</code>.</p>
+
+  <p>Juntando tudo, é assim que nosso código se parece:</p>
+
+  <pre>
+    Math.floor(Math.random() * 20);
+  </pre>
+
+  <p>Nós estamos chamando <code>Math.random()</code>, multiplicando o resultado por 20, e em seguida passando o valor para a função <code>Math.floor()</code> para arredondar o valor para o número inteiro mais próximo abaixo.</p>
+
+  <p>Use essa técnica para gerar e retornar um número inteiro aleatório entre <code>0</code> e <code>9</code>.</p>
+</body>
+</html>
