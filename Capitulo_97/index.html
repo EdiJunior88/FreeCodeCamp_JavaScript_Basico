@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Iterar com laços for em JavaScript</title>
+</head>
+<body>
+  <h1>Iterar com laços for em JavaScript</h1>
+
+  <p>Você pode rodar o mesmo código várias vezes usando um laço.</p>
+
+  <p>O tipo mais comum de laço JavaScript é chamado de laço <code>for</code>, porque ele é executado por um número especificado de vezes.</p>
+
+  <p>Laços for são declarados com três expressões opcionais separadas por ponto e vírgula:</p>
+
+  <p><code>for (a; b; c)</code>, onde <code>a</code> é a declaração de inicialização, <code>b</code> é a declaração de condição, e <code>c</code> é a expressão final.</p>
+
+  <p>A declaração de inicialização é executada apenas uma vez antes de o laço iniciar. Normalmente, é usada para definir e configurar sua variável de laço.</p>
+
+  <p>A declaração de condição é verificada no início de cada iteração do laço e vai continuar enquanto seu valor for <code>true</code>. Quando a condição for <code>false</code> no início da iteração, o laço vai parar de executar. Isso significa que se a condição de início for falsa, seu laço nunca será executado.</p>
+
+  <p>A expressão final é executada no final de cada iteração do laço, antes da verificação da próxima condição e normalmente é usada para incrementar ou decrementar o contador do laço.</p>
+
+  <p>No exemplo a seguir, inicializamos com <code>i = 0</code> e iteramos enquanto nossa condição <code>i < 5</code> for verdadeira. Nós incrementaremos <code>i</code> em <code>1</code> em cada iteração do laço com <code>i++</code> como nossa expressão final.</p>
+
+  <pre>
+    const ourArray = [];
+
+    for (let i = 0; i < 5; i++) {
+      ourArray.push(i);
+    }
+  </pre>
+
+  <p><code>ourArray</code> agora terá o valor de <code>[0, 1, 2, 3, 4]</code>.</p>
+
+  <p>Use o laço <code>for</code> para adicionar os valores de 1 até 5 dentro de <code>myArray</code>.</p>
+</body>
+</html>
